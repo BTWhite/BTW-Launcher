@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import fxmltableview.* ?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.* ?>
+
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="org.bitcoinwhite.launcher.gui.particles.index.IndexController">
+	
+
+	
+	<ProgressIndicator fx:id="progressBar" 
+					progress="0.0" 
+					AnchorPane.bottomAnchor="110" 
+					AnchorPane.leftAnchor="155" 
+					minWidth="200" 
+					minHeight="200">
+	    <VBox.margin>
+	        <Insets top="3.0" />
+	    </VBox.margin>
+	</ProgressIndicator>
+	
+	<HBox spacing="10"
+			prefWidth="505"
+			AnchorPane.bottomAnchor="80"
+			AnchorPane.leftAnchor="2.5"
+			alignment="CENTER">
+			
+        <TextFlow textAlignment="CENTER" prefWidth="505">
+        	<Text fx:id="progressText" text="undefined" />
+        </TextFlow>
+	</HBox>
+	<Button fx:id="startNodeBtn" 
+			alignment="CENTER" 
+			text="Continue" 
+			prefWidth="70" 
+			AnchorPane.leftAnchor="220" 
+			AnchorPane.topAnchor="300" 
+			onAction="#startNode" />
+
+	
+</AnchorPane>

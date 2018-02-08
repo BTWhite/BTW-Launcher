@@ -1,0 +1,9 @@
+Text {
+	-fx-font: 12px Arial;
+    -fx-stroke-width: 1;
+    -fx-fill: gray;
+}
+
+.text-muted {
+	-fx-fill: silver;
+}
